@@ -5,6 +5,20 @@
 // @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+//Brand Colors
+
+.brand_color1 {
+  color: #98dede;
+}
+
+.brand_color2 {
+  color: #fcc883;
+}
+
+.brand_color3 {
+  color: #c3b1e1;
+}
+
 //Defaults Setting
 * {
   margin: 0px;
@@ -16,7 +30,7 @@
 
 body {
   padding: 0px 80px;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 
 // Header Section
@@ -48,4 +62,171 @@ header {
   color: #98dede;
   font-weight: 700;
   font-size: 30px;
+}
+
+// Hero Section
+.hero_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+
+  .hero_iphone-mockup {
+    height: 650px;
+    width: 58%;
+  }
+}
+
+.hero_brief {
+  white-space: nowrap;
+  .hero_brief_text1 {
+    color: #000000;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+    margin: 20px 0px;
+
+    .text1secondspan {
+      display: block;
+    }
+  }
+
+  .hero_brief_text2 {
+    color: #000000d8;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 25px 0px 40px 0px;
+    .text2secondspanwrapper {
+      display: block;
+    }
+
+    .text2thirdspan {
+      display: block;
+    }
+  }
+
+  .hero_mail {
+    color: #a6a8b2;
+    border: 1px solid #a6a8b2;
+    letter-spacing: 1px;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 5px;
+    border-radius: 9px;
+    margin-right: 10px;
+    width: 300px;
+    transition: all 0.3s ease 0s;
+    &:focus {
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .hero_button {
+    background-color: #fcc883;
+    letter-spacing: 1.5px;
+    border: 1px solid #fcc883;
+    color: #c68e4b;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #ffffff;
+      color: #fcc883;
+      box-shadow: 0px 8px 15px #fcc88317;
+    }
+  }
+}
+//Rainbow Section
+.rainbowsystem svg {
+  width: 100%;
+  margin: 20px auto;
+}
+
+// Intro Section
+
+.intro_wrapper {
+  margin: 50px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 100px;
+  .intro_wrapper_mini {
+    text-align: center;
+
+    .intro_wrapper_title {
+      color: #000000;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 20px 0px;
+    }
+
+    .intro_wrapper_brief {
+      color: #9297ad;
+      font-weight: 400;
+      font-size: 25px;
+    }
+  }
+}
+
+// Extro Section
+
+.extro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 20px;
+
+  .extro_title {
+    font-size: 100px;
+    color: #98dede;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  .extro_brief {
+    color: #333333;
+    text-align: center;
+    width: 500px;
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .extro_mail {
+    color: #a6a8b2;
+    border: 1px solid #a6a8b2;
+    letter-spacing: 1px;
+    outline: none;
+    font-size: 23px;
+    padding: 20px;
+    border-radius: 9px;
+
+    width: 500px;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 25px;
+    &:focus {
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .extro_button {
+    background-color: #c3b1e1;
+    letter-spacing: 1.5px;
+    border: 1px solid #c3b1e1;
+    color: #625970;
+    font-weight: 400;
+    font-size: 23px;
+    padding: 15px 30px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 25px;
+    &:hover {
+      background-color: #ffffff;
+      color: #c3b1e1;
+      box-shadow: 0px 8px 15px #fcc88317;
+    }
+  }
 }
