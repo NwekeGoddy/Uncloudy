@@ -65,7 +65,7 @@ header {
     font-weight: 400;
     font-size: 70px;
     line-height: 70px;
-    margin: 20px 0px; }
+    margin: 25px 0px; }
     .hero_brief .hero_brief_text1 .text1secondspan {
       display: block; }
   .hero_brief .hero_brief_text2 {
@@ -73,7 +73,7 @@ header {
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
-    margin: 25px 0px 40px 0px; }
+    margin: 25px 0px 25px 0px; }
     .hero_brief .hero_brief_text2 .text2secondspanwrapper {
       display: block; }
     .hero_brief .hero_brief_text2 .text2thirdspan {
@@ -88,7 +88,7 @@ header {
     border-radius: 9px;
     margin-right: 10px;
     margin-bottom: 20px;
-    width: 300px;
+    width: 250px;
     transition: all 0.3s ease 0s;
     box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.1); }
     .hero_brief .hero_mail:focus {
@@ -137,27 +137,33 @@ header {
       font-weight: 400;
       font-size: 18px; }
 
-.clip {
-  display: flex;
-  justify-content: center; }
-
-.clip svg {
-  width: 65%; }
-
 .design1 {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .design1 .clip {
+    display: flex;
+    justify-content: center; }
+  .design1 .clip svg {
+    width: 65%; }
 
 .design2 div {
   position: absolute;
-  top: 90%;
-  right: -20px; }
+  top: 100%;
+  right: 0px; }
+  .design2 div .clip {
+    display: flex; }
+  .design2 div .clip svg {
+    width: 65%; }
 
 .design3 div {
   position: absolute;
   top: 10px;
-  right: -10px; }
+  right: 0px; }
+  .design3 div .clip {
+    display: flex; }
+  .design3 div .clip svg {
+    width: 65%; }
 
 .extro {
   display: flex;

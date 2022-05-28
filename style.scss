@@ -29,14 +29,12 @@
 }
 
 body {
-  
   background-color: #ffffff;
 }
 
-.body-padding{
+.body-padding {
   padding: 0px 80px;
 }
-
 
 // Header Section
 header {
@@ -95,7 +93,7 @@ header {
     font-weight: 400;
     font-size: 70px;
     line-height: 70px;
-    margin: 20px 0px;
+    margin: 25px 0px;
 
     .text1secondspan {
       display: block;
@@ -107,7 +105,7 @@ header {
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
-    margin: 25px 0px 40px 0px;
+    margin: 25px 0px 25px 0px;
     .text2secondspanwrapper {
       display: block;
     }
@@ -127,7 +125,7 @@ header {
     border-radius: 9px;
     margin-right: 10px;
     margin-bottom: 20px;
-    width: 300px;
+    width: 250px;
     transition: all 0.3s ease 0s;
     box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.1);
     &:focus {
@@ -160,11 +158,10 @@ header {
 }
 
 // Intro Section
-.wrapper{
+.wrapper {
   position: relative;
   padding: 0 !important;
 }
-
 
 .intro_wrapper {
   margin: 20px 80px 50px 80px;
@@ -197,34 +194,43 @@ header {
 //design1 Section
 //All design clipping
 
-.clip {
-  display: flex;
-  justify-content: center;
-}
-.clip svg {
-  width: 65%;
-}
-
 .design1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  
+  .clip {
+    display: flex;
+    justify-content: center;
+  }
+  .clip svg {
+    width: 65%;
+  }
 }
 
 //design2 Section
 .design2 div {
   position: absolute;
-  top: 90%;
-  right: -20px;
+  top: 100%;
+  right: 0px;
+  .clip {
+    display: flex;
+  }
+  .clip svg {
+    width: 65%;
+  }
 }
 
 //design3 Section
 .design3 div {
   position: absolute;
   top: 10px;
-  right: -10px;
+  right: 0px;
+  .clip {
+    display: flex;
+  }
+  .clip svg {
+    width: 65%;
+  }
 }
 
 // Extro Section
