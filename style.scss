@@ -1,9 +1,15 @@
 // Linking to the CSS file
 @import "style.css";
 
-// Importing of Font Family
+// Importing of Font Family Epilogue fro google fonts 
 // @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Importing of Gallient Font 
+@font-face {
+  font-family: Gallient;
+  src: url(fonts/gallient-cufonfonts/GallientRegular-eZoMp.ttf);
+}
 
 //Brand Colors
 
@@ -20,16 +26,22 @@
 }
 
 //Defaults Setting
+
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  font-family: Raleway, "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
+  box-sizing: border-box; 
 }
 
 body {
   background-color: #ffffff;
+  font-family: Raleway, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+.gallient{
+  font-family: Gallient, "Franklin Gothic Medium", "Arial Narrow", Arial,
+  sans-serif;
 }
 
 .body-padding {
@@ -42,9 +54,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 30px 0px 15px 0px;
-  border-bottom: 1px solid #d7d8da;
-  font-family: Epilogue, "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
+  font-family: Epilogue, "Franklin Gothic Medium", "Arial Narrow", Arial,sans-serif;
 }
 .header_child {
   padding: 0px 20px;
@@ -59,7 +69,7 @@ header {
   color: #333333;
   font-weight: 300;
   font-size: 25px;
-}
+  }
 
 .header_waitlist {
   color: #98dede;
@@ -94,7 +104,7 @@ header {
     font-size: 70px;
     line-height: 70px;
     margin: 25px 0px;
-
+  
     .text1secondspan {
       display: block;
     }
@@ -121,6 +131,7 @@ header {
     letter-spacing: 1px;
     outline: none;
     font-size: 15px;
+    font-family: Raleway;
     padding: 11px 10px;
     border-radius: 9px;
     margin-right: 10px;
@@ -133,19 +144,21 @@ header {
     }
   }
   .hero_button {
-    background-color: #fcc883;
+    background-color: #98DEDE;
     letter-spacing: 1.5px;
-    border: 1px solid #fcc883;
-    color: #c68e4b;
+    border: 1px solid #98DEDE;
+    color: #2E7272;
     font-weight: 400;
     font-size: 16px;
-    padding: 10px 20px;
+    font-family: Raleway;
+    padding: 11px 22px;
     border-radius: 9px;
+    box-shadow: 0 0 50px #98DEDE;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     &:hover {
       background-color: #ffffff;
-      color: #fcc883;
+      color: #98DEDE;
       box-shadow: 0px 8px 15px #fcc88317;
     }
   }
@@ -158,80 +171,87 @@ header {
 }
 
 // Intro Section
-.wrapper {
-  position: relative;
-  padding: 0 !important;
-}
 
 .intro_wrapper {
-  margin: 20px 80px 50px 80px;
+  // margin: 50px 0px;
+  padding: 50px 80px 50px 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-
+  justify-content: space-between;
   gap: 70px;
+  background-color: #98DEDE;
 
   .intro_wrapper_mini {
     text-align: center;
-    width: 30%;
+    width: 20%;
 
     .intro_wrapper_title {
-      color: #000000;
+      color: #379191;
       font-weight: 400;
       font-size: 25px;
       line-height: 25px;
-      margin: 10px 0px;
+      margin: 10px 0px 25px 0px;
     }
 
     .intro_wrapper_brief {
-      color: #9297ad;
+      color: #ffffff;
       font-weight: 400;
       font-size: 18px;
+      line-height: 20px;
     }
   }
 }
 
-//design1 Section
-//All design clipping
+//How it Works Section
 
-.design1 {
+.howitworks__section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  .clip {
-    display: flex;
-    justify-content: center;
+  margin: 50px 80px 50px 80px;
+
+  .howitworks__title{
+    text-align: center;
+    color: #FCC883;
+    font-weight: 400;
+    font-size: 70px;
+    margin: 50px 0px;
   }
-  .clip svg {
-    width: 65%;
+
+  .howitworks__wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+
+    .howitworks__each{
+        width: 20%;
+
+      .howitworks__each__img{
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+      }
+      .howitworks__each__title{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 25px;
+        color: #298686;
+        margin: 30px 0px;
+       
+      }
+      .howitworks__each__brief{
+        font-weight: 400;
+        font-size:18px;
+        line-height: 25px;
+        color: #6F6B6B;
+        margin: 30px 0px;
+        text-align: justify;
+      }
+    }
   }
 }
 
-//design2 Section
-.design2 div {
-  position: absolute;
-  top: 100%;
-  right: 0px;
-  .clip {
-    display: flex;
-  }
-  .clip svg {
-    width: 65%;
-  }
-}
-
-//design3 Section
-.design3 div {
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  .clip {
-    display: flex;
-  }
-  .clip svg {
-    width: 65%;
-  }
-}
 
 // Extro Section
 
@@ -243,7 +263,7 @@ header {
 
   .extro_title {
     font-size: 70px;
-    color: #98dede;
+    color: #FCC883;
     font-weight: 400;
     margin-bottom: 25px;
   }
@@ -274,9 +294,9 @@ header {
     }
   }
   .extro_button {
-    background-color: #c3b1e1;
+    background-color: #98DEDE;
     letter-spacing: 1.5px;
-    border: 1px solid #c3b1e1;
+    border: 1px solid #98DEDE;
     color: #625970;
     font-weight: 400;
     font-size: 18px;
@@ -285,10 +305,11 @@ header {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     margin-bottom: 25px;
-
+    box-shadow: 0 0 50px #98DEDE;
+    
     &:hover {
       background-color: #ffffff;
-      color: #c3b1e1;
+      color: #98DEDE;;
       box-shadow: inset 0px 8px 15px #fcc88317;
     }
   }
