@@ -133,14 +133,14 @@ header {
     padding: 0px 20px;
   }
   .header_logo {
-    width: 85px;
-    height: 21px;
+    width: 90px;
+    height: 23px;
   }
   .header_find {
-    font-size: 14px;
+    font-size: 13px;
   }
   .header_waitlist {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
