@@ -76,7 +76,7 @@ header {
   font-family: Epilogue, "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
 }
-.header_child {
+.header_child:nth-child(2) {
   padding: 0px 20px;
 }
 
@@ -103,7 +103,7 @@ header {
   header {
     margin: 20px 0px 10px 0px;
   }
-  .header_child {
+  .header_child:nth-child(2) {
     padding: 0px 20px;
   }
 
@@ -126,23 +126,47 @@ header {
   header {
     margin: 20px 0px 10px 0px;
   }
-  .header_child {
+  .header_child:nth-child(2) {
     padding: 0px 20px;
   }
 
   .header_logo {
-    width: 123px;
-    height: 30px;
+    width: 107px;
+    height: 26px;
   }
 
   .header_find {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .header_waitlist {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
+
+@media (max-width: 480px) {
+  /* For mobile phones: */
+  header {
+    margin: 20px 0px 10px 0px;
+  }
+  .header_child:nth-child(2) {
+    padding: 0px 20px;
+  }
+
+  .header_logo {
+    width: 85px;
+    height: 21px;
+  }
+
+  .header_find {
+    font-size: 14px;
+  }
+
+  .header_waitlist {
+    font-size: 14px;
+  }
+}
+
 
 // Hero Section
 .hero_wrapper {
@@ -275,6 +299,58 @@ header {
       .text2thirdspan {
         display: block;
       }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_wrapper {
+    flex-direction: column;
+    margin: 30px 0px 30px 0px;
+
+    .hero_iphone-mockup {
+      // height: 650px;
+      width: 70%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .hero_mail {
+      font-size: 13px;
+      padding: 8px 7px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      width: 250px;
+     
+    }
+    .hero_button {
+      letter-spacing: 1.5px;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
+  .hero_brief {
+    text-align: center;
+    width: 80%;
+    .hero_brief_text1 {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 15px 0px;
+      text-align: center;
+
+    }
+
+    .hero_brief_text2 {
+     
+      font-size: 18px;
+      line-height: 20px;
+      margin: 20px 0px 20px 0px;
+      text-align: center;
+      
     }
   }
 }
@@ -437,7 +513,35 @@ header {
   }
 }
 
+@media (max-width: 480px){
+  .howitworks__section {
+   margin: 20px 40px;
+  
+    .howitworks__title {
+      font-size: 40px;
+    }
+  
+    .howitworks__wrapper {
+     
+  
+      .howitworks__each {
+        width: 45%;
 
+        .howitworks__each__title {
+          font-size: 18px;
+          line-height: 20px;
+          margin: 15px 0px;
+        }
+
+        .howitworks__each__brief {
+           font-size: 14px;
+          line-height: 16px;
+          margin: 15px 0px;
+        }
+      }
+    }
+  }
+}
 
 //Rainbow Section
 .rainbowsystem{
@@ -445,7 +549,6 @@ header {
 }
 .rainbowsystem svg {
   width: 100%;
-  margin: 10px auto;
 }
 
 // Extro Section
@@ -525,6 +628,10 @@ header {
       font-size: 20px;
       margin-bottom: 25px;
     }
+
+    .extro_mail {
+      width: 70%;
+    }
   }
 
   .rainbowsystem svg {
@@ -534,14 +641,41 @@ header {
 
 @media (max-width: 500px){
   .extro {
-  .extro_mail {
-    width: 90%;
+    .extro_mail {
+      width: 90%;
+    }
   }
 }
 
-.rainbowsystem svg {
-  width: 80%;
-}
+@media (max-width: 480px) {
+  .extro { 
+    margin: 10px 20px 20px 20px;
+    .extro_title {
+      font-size: 40px; 
+      margin-bottom: 10px;
+    }
+  
+    .extro_brief {  
+      width: 80%;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .extro_mail {
+      font-size: 13px;
+      padding: 8px 7px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      width: 250px;
+     
+    }
+    .extro_button {
+      letter-spacing: 1.5px;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
 }
 
 // footer Section
@@ -584,13 +718,14 @@ header {
     margin: 40px 0px;
 
     div.social_logo_wrapper {
-      padding: 10px;
+      padding: 7px;
     }
   
     .social_logo {
-      width: 20px;
-      height: 20px;
-  }  
+      width: 15px;
+      height: 15px;
+    }  
+  }
 }
 
 
