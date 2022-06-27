@@ -4,20 +4,24 @@
 
 
   $email_from = 'nwekechidigodwin460@gmail.com';
-
   $email_subject = "UNCLOUDY NOTIFICATION";
-
   $email_body = "You have received a waitlist vsitor email:\n".
                           "Here is the email:\n $visitor_email".
 
-                          
-                          $to = "nwekechidigodwin460@gmail.com";
+    
+    $to = "nwekechidigodwin460@gmail.com";
 
-                          $headers = "From: $email_from \r\n";
-                        
-                          $headers .= "Reply-To: $visitor_email \r\n";
-                        
-                          mail($to,$email_subject,$email_body,$headers);
+    $headers = "From: $email_from \r\n";
+    
+    $headers .= "Reply-To: $visitor_email \r\n";
+    if($email!=NULL){
+        mail($to,$email_subject,$email_body,$headers);
+    }
+    //redirect
+    header("Location:index.html");
+    
+    
+
 // if($_POST["message"]) {
 
 
