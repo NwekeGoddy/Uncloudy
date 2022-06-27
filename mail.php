@@ -9,7 +9,7 @@
                           "Here is the email:\n $visitor_email".
 
     
-    $to = "nwekechidigodwin460@gmail.com";
+    $to = "$visitor_email";
 
     $headers = "From: $email_from \r\n";
     
